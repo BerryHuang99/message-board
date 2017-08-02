@@ -1,1 +1,1 @@
-Short URL project
+Message Board project
