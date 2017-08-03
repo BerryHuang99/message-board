@@ -1,34 +1,32 @@
-// 不推荐使用这种方式进行数组初始化
-// 一般采用对象字面量的方式进行
-// var urls = [];
-// 具体原因我回头告诉你，忘记了--
-const urls = [];
-
-
-// 注意看注释，这里要求有一个返回值
 /**
- * Convert originalURL to a unique short url
+ * Send message
  * 
- * @param {String} originalURL
- * @return {String} returns a new unique short url
+ * @param {String} email
+ * @param {String} message
+ * @return {String} return the information about the message
  */
-function convertToShortURL(originalURL) {
-    const currentIndex = urls.length;
-    urls[currentIndex] = originalURL;
-    return currentIndex;
+function sendMessage(email, message) {
+    const date = new Date();
+    var infor = "<div class=\'message\'><p><span>" + email + "&nbsp;&nbsp;" + date.getFullYear() + "." + date.getMonth() + "." + date.getDate() 
+                + "&nbsp;&nbsp;" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "</span></p>"
+                + "<p>" + message + "</p><\div>";
+    return infor;
 }
 
 /**
- * Revert shortURL back to original long url
- * @param {String} shortURL
- * @return {String} returns original long url
+ * Connect messages
+ * @param {String} infor
+ * @param {String} messages
+ * @return {String} return the messages connected
  */
-function revertToOriginalURL(shortURL) {
-    return urls[shortURL];
+function connectMessages(infor, messages) {
+    messages += infor;
+    return messages;
 }
 
 // Unit Test
-const url = 'http://www.huangyufeng.com';
-const short = convertToShortURL(url);
-const originalURL = revertToOriginalURL(short);
-console.log(originalURL);
+var messages = null;
+const email = '734113510@qq.com';
+const message = 'hello world!';
+const infor = sendMessage(email, message);
+console.log(connectMessages(infor, messages));
