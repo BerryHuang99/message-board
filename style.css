@@ -7,6 +7,9 @@
 .center {
     text-align: center;
 }
+body {
+    position: relative;
+}
 header {
     height: 10%;
     padding: 1%;
@@ -14,24 +17,27 @@ header {
 }
 header img{
     height: 35px;
-    margin: 1px 10px;   
+    margin: 1px 10px;
+    float: left;   
 }
 header h1{
     display: inline-block;
     color: #fff;
     margin:  auto;
+    float: left;
 }
 footer {
     height: 5%;
     width: 100%;
     border-top: 1px solid #c1c1c1;
     position: absolute;
-    bottom: 0;
+    bottom: 0；
 }
 footer h5 {
     margin: auto;
 }
 #main-body {
+    min-height: 500px;
     width: 100%;
 }
 #main-body h3{
@@ -40,12 +46,12 @@ footer h5 {
     border-bottom: 2px solid #000;
     width: 200px;
 }
-#main-body #leaving-message {
-    width: 100%;
-    position: absolute;
-    bottom: 8%;
+#leaving-message {
+    display: inline;
+    float: right;
 }
-#main-body input {
+input[type="email"] {
+    width: 100%;
     display: block;
     margin: 3px auto;
 }
@@ -55,22 +61,17 @@ footer h5 {
     border: 1px solid #c1c1c1;
 }
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 5px;
     border: 1px solid #c1c1c1;
-}
-input[type="submit"] {
-    width: 10%;
-    height: 15%;
-    padding: 5px;
-    border-radius: 5%;
-    background-color: #23ac2f;
-    color: #fff;
 }
 .message span{
     color: #c1c1c1;
     font-style: italic;
 }
 .message {
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+.clearfix {
+    clear: both;
 }
