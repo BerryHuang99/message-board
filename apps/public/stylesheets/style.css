@@ -1,8 +1,77 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Microsoft YaHei";
 }
-
-a {
-  color: #00B7FF;
+.center {
+    text-align: center;
+}
+body {
+    position: relative;
+}
+header {
+    height: 10%;
+    padding: 1%;
+    background-color: #000;
+}
+header img{
+    height: 35px;
+    margin: 1px 10px;
+    float: left;   
+}
+header h1{
+    display: inline-block;
+    color: #fff;
+    margin:  auto;
+    float: left;
+}
+footer {
+    height: 5%;
+    width: 100%;
+    border-top: 1px solid #c1c1c1;
+    position: absolute;
+    bottom: 0；
+}
+footer h5 {
+    margin: auto;
+}
+#main-body {
+    min-height: 500px;
+    width: 100%;
+}
+#main-body h3{
+    margin: 1% 0;
+    padding: 2px 0;
+    border-bottom: 2px solid #000;
+    width: 200px;
+}
+#leaving-message {
+    display: inline;
+    float: right;
+}
+input[type="email"] {
+    width: 100%;
+    display: block;
+    margin: 3px auto;
+}
+.stext {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #c1c1c1;
+}
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #c1c1c1;
+}
+.message span{
+    color: #c1c1c1;
+    font-style: italic;
+}
+.message {
+    margin-bottom: 20px; 
+}
+.clearfix {
+    clear: both;
 }
