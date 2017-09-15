@@ -38,7 +38,8 @@ footer h5 {
 }
 #main-body {
     min-height: 500px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 #main-body h3{
     margin: 1% 0;
