@@ -5,7 +5,7 @@ const messages = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index',{ messages: messages });
+  res.render('index',{ messages: messages.reverse() });
 });
 
 router.post('/leaving-message', function(req, res, next) {
